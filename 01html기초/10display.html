@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        div{
+            background-color: green;
+            width: 100px; 
+            height: 100px;
+            display:inline-block;
+        }
+        span{
+            background-color: yellowgreen;
+            width: 100px; 
+            height: 100px;
+            display:flex;
+            /**display: none;
+            **/
+        }
+        a{
+            display:block;
+            background-color: cadetblue;
+            width:100px; 
+            height:40px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 40px;
+            border: 5px outset #000;
+        }
+        a :hover{
+            border: 5px inset #ddd;
+        }
+        a:active{
+            border: 5px inset solid;
+        }
+        /**
+        블록요소 : 가로/세로값 인식O, 세로배열
+        인라인요소 : 가로/세로값 인식X, 가로배열
+        + 여백의 좌우는 인식 O / 상하는 인식 X 
+        인라인-블록요소: 가로/세로값 인식O, 가로배열
+        **/
+    </style>
+</head>
+<body>
+    <div>div태그</div>
+    <div>div태그</div>
+    <div>div태그</div>
+    <span>span태그</span>
+    <span>span태그</span>
+    <span>span태그</span>
+    <a href="http://naver.com">
+        네이버GO
+    </a>
+
+</body>
+</html>

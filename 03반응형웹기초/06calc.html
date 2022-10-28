@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cal함수</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /*
+    calc()함수
+    - css 속성값으로 계산식 지정
+    - () 소괄호안에 계산식을 작성하고 그 결과가 최종값이 된다
+    - 고차원의 연산은 안됨. / 간단한 사칙연산 가능
+    - 연산자 + , - , / , * 를 사용, 표준연산자 우선순위를 따른다
+    - !!! 반드시 !!! 연산자 사이에는 좌우에 공백을 입력한다. 
+    */
+
+    .boxCont1 .box1{
+        width: calc(100% - 80px);
+        height: 100px;
+        background-color: pink;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .boxCont2>div{
+        /* width: calc(33.33% - 30px); */
+        width: calc(100% / 3 - 30px);
+        height: 100px;
+        float: left;
+        margin: 0 15px;
+    }
+    .boxCont2 .box1{
+        background-color: gold;
+        float: left;
+    }
+    .boxCont2 .box2{
+        background-color: tomato;
+        float: left;
+    }
+    .boxCont2 .box3{
+        background-color: slateblue;
+        float: left;
+    }
+</style>
+<body>
+    <div class="boxCont1">
+        <div class="box1"></div>
+    </div>
+    <div class="boxCont2">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

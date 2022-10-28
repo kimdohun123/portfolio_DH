@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #left{
+        width: 340px;
+        background-color: black;
+    }
+    #left p{
+        width: 100px;
+        height: 100px;
+        background-color: khaki;
+        float: left;
+        margin-right: 20px;
+    }
+    #left p:last-child{
+        margin-right: 0;
+    }
+
+    
+    .clear::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    
+    .d1{
+        background-color: black;
+        width: 790;
+    }
+    .d1 p{
+        width: 100px;
+        height: 100px;
+        background-color: palevioletred;
+        float: left;
+        margin-right: 15px;
+    }
+    .d1 p:last-child{
+        margin-right: 0;
+    }
+
+</style>
+<body>
+    <div id="left" class="clear">
+        <p>left01</p>
+        <p>left02</p>
+        <p>left03</p>
+    </div>
+
+    <div class="d1 clear">
+        <p>d1_1</p>
+        <p>d1_2</p>
+        <p>d1_3</p>
+        <p>d1_4</p>
+        <p>d1_5</p>
+        <p>d1_6</p>
+        <p>d1_7</p>
+<!-- 가로 여백 10px / width height 100px -->
+    </div>
+</body>
+
+</html>

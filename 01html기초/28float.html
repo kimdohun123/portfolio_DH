@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .section{
+            background-color: blueviolet;
+            /* overflow: hidden; 잘안씀.*/
+        }
+        .section>p {
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            float:right;
+            margin-right: 20px;
+        }
+        .clear::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="section clear">
+        <p>div태그</p>    
+        <p>div태그</p>    
+        <p>div태그</p> 
+        <!--<div class="clear"></div>-->
+    </div>
+
+    <div class="section clear">
+        <p>div태그</p>    
+        <p>div태그</p>    
+        <p>div태그</p> 
+        <!--<div class="clear"></div>-->
+    </div>
+
+    <!-- 
+        float 속성
+    형제관계인 태그들 끼리 가로배열 되도록 만드는 속성
+    -left : 태그를 왼쪽으로 부터 차례대로 가로배열
+    -right : 태그를 오른쪽으로 부터 차례대로 가로배열
+    -none : 기본값 , float 속성을 안쓴 상태
+
+    float 속성이 추가된 태그는 자기들끼리 가로배열을 맞추기 위해 
+    브라우저로부터 띄워진 상태로 인식하기 때문에 float 속성을
+    사용한 태그를 감싸고 있는 부모태그는 높이값을 0으로 인식한다. 
+    
+    부모태그의 높이값을 찾아주는 방법
+    1. 부모태그에 overflow:hidden 속성 넣기
+    2. float 속성을 쓴 태그 다음에 div 구조 넣고 clear:both 속성 넣기
+    3. 가상선택자 ::after을 사용하여 float속성을 쓴 택의 부모태그에 
+    clear 추가후
+    .clear::after{
+        content:'';
+        display:block;
+        clear:both
+    }
+    -->
+</body>
+
+
+</html>

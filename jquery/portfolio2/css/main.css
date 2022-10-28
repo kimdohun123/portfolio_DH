@@ -1,0 +1,114 @@
+section{
+    height: 100vh;
+}
+#work{
+    width: 100%;
+    position: relative;
+}
+#work .list{
+    height: 100%;
+    display: flex;
+}
+#work .list .thumb{
+    width: 25%;
+    position: relative;
+    background-repeat: no-repeat;   
+    background-position: center center;
+    background-size: cover;
+}
+#work .list .thumb:nth-child(1){
+    background-image: url(../img/works01.jpg);
+}
+#work .list .thumb:nth-child(2){
+    background-image: url(../img/works02.jpg);
+}
+#work .list .thumb:nth-child(3){
+    background-image: url(../img/works03.jpg);
+}
+#work .list .thumb:nth-child(4){
+    background-image: url(../img/works04.jpg);
+}
+#work .list .thumb a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#work .list .thumb .over{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+    opacity: 0;
+}
+#work .list .thumb .over:hover{
+    opacity: 1  ;
+}
+#work .list .thumb .over .txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+#work .list .thumb .over .txt h3{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+#work .cont>div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+#work .cont .wide_play:nth-child(1) {
+    background: url(../img/work_click01.jpg) no-repeat center center / cover;
+}
+#work .cont .wide_play:nth-child(2) {
+    background: url(../img/work_click02.jpg) no-repeat center center / cover;
+}
+#work .cont .wide_play:nth-child(3) {
+    background: url(../img/work_click03.jpg) no-repeat center center / cover;
+}
+#work .cont .wide_play:nth-child(4) {
+    background: url(../img/work_click04.jpg) no-repeat center center / cover;
+}
+#work .cont .wide_play .playin{
+    width: 1360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#work .cont .wide_play .playin .close{
+    position: absolute;
+    top: -70px;
+    right: 0;
+    background-color: transparent;
+    border: 0;
+}
+#work .cont .wide_play .playin .play {
+    width: 1015px;
+    height: 571px;
+}
+#work .cont .wide_play .playin .play iframe {
+    width: 100%;
+    height: 100%;
+}
+#work .cont .wide_play .playin .info {
+    width: 325px;
+}
+#work .cont .wide_play .playin .info h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#work .cont .wide_play .playin .info p {
+    text-align: justify;
+}

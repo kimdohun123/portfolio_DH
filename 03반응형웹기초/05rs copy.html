@@ -1,0 +1,231 @@
+05rs.html
+액세스 권한이 있는 사용자
+조
+시스템 속성
+유형
+HTML
+크기
+5KB
+사용한 용량
+8KB
+위치
+반응형웹기초
+소유자
+조은별
+수정 날짜
+오후 12:22에 조은별님이 수정
+열어 본 날짜
+오후 12:24에 내가 열어 봄
+생성 날짜
+오전 10:34
+설명 추가
+뷰어가 다운로드할 수 있음
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형웹 rs05</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        .clear::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        body {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* 초기화 */
+
+        #nav {
+            width: 100%;
+            height: 80px;
+            background-color: #fc0;
+        }
+
+        #cont1 img {
+            width: 100%;
+            height: auto;
+        }
+
+        #cont2 .cont2_l {
+            width: 100%;
+            height: 230px;
+            background-color: palevioletred;
+        }
+
+        #cont2 .cont2_r {
+            width: 100%;
+            height: 230px;
+            background-color: plum;
+        }
+
+        #cont3 img {
+            width: 100%;
+            height: auto;
+        }
+
+        #cont4 .cont4_l1 {
+            width: 100%;
+            height: 200px;
+            background-color: greenyellow;
+        }
+
+        #cont4 .cont4_r1 {
+            width: 100%;
+            height: 200px;
+            background-color: green;
+        }
+
+        #cont4 .cont4_l2 {
+            width: 100%;
+            height: 200px;
+            background-color: skyblue;
+        }
+
+        #cont4 .cont4_r2 {
+            width: 100%;
+            height: 200px;
+            background-color: dodgerblue;
+        }
+
+        /********** 모바일 화면 끝 **********/
+
+        @media all and (min-width:480px) {
+            #cont3 .cont3_l {
+                width: 50%;
+                float: left;
+            }
+
+            #cont3 .cont3_c {
+                width: 50%;
+                float: left;
+            }
+
+            #cont3 .cont3_r {
+                width: 100%;
+                float: left;
+            }
+
+            #cont4 .cont4_l1 {
+                width: 50%;
+                float: left;
+            }
+
+            #cont4 .cont4_r1 {
+                width: 50%;
+                float: left;
+            }
+
+            #cont4 .cont4_l2 {
+                width: 50%;
+                float: left;
+            }
+
+            #cont4 .cont4_r2 {
+                width: 50%;
+                float: left;
+            }
+        }
+
+        /********** 480px 끝 **********/
+
+        @media all and (min-width:768px) {
+            #nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 100;
+            }
+
+            #cont1 {
+                margin-top: 80px;
+            }
+
+            #cont2 .cont2_l {
+                width: 50%;
+                float: left;
+            }
+
+            #cont2 .cont2_r {
+                width: 50%;
+                float: left;
+            }
+
+            #cont3 .cont3_l {
+                width: 33.33%;
+            }
+
+            #cont3 .cont3_c {
+                width: 33.33%;
+            }
+
+            #cont3 .cont3_r {
+                width: 33.33%;
+            }
+        }
+
+        /********** 768px 끝 **********/
+
+        @media all and (min-width:1024px) {
+            section {
+                max-width: 1024px;
+                margin: 0 auto;
+            }
+
+            #cont4 .cont4_l1 {
+                width: 25%;
+            }
+
+            #cont4 .cont4_r1 {
+                width: 25%;
+            }
+
+            #cont4 .cont4_l2 {
+                width: 25%;
+            }
+
+            #cont4 .cont4_r2 {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav">nav</nav><!-- nav -->
+    <section id="cont1">
+        <img src="img/08.jpg">
+    </section><!-- cont1 -->
+    <section id="cont2" class="clear">
+        <div class="cont2_l">section-left</div>
+        <div class="cont2_r">section-right</div>
+    </section><!-- cont2 -->
+    <section id="cont3" class="clear">
+        <div class="cont3_l"><img src="img/04.jpg"></div>
+        <div class="cont3_c"><img src="img/05.jpg"></div>
+        <div class="cont3_r"><img src="img/06.jpg"></div>
+    </section><!-- cont3 -->
+    <section id="cont4">
+        <div class="cont4_l1">section-left1</div>
+        <div class="cont4_r1">section-right1</div>
+        <div class="cont4_l2">section-left2</div>
+        <div class="cont4_r2">section-right2</div>
+    </section><!-- cont4 -->
+</body>
+
+</html>

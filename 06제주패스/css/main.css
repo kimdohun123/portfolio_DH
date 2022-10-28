@@ -1,0 +1,735 @@
+#header{
+    background-color: #f8f8f8;
+    height: 104px;
+    min-width: 1136px;
+    padding: 0 72px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#header .logo{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#header .logo a{
+    background: url(../images/spr_layout.png) no-repeat 0 0;
+    display: block;
+    width: 140px;
+    height: 26px;
+    font-size: 0;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* nav .gnb{} */
+
+nav .gnb li{
+    display: inline-block;
+    margin: 0 15px;
+    font-family: 'NanumSquareRound';
+    font-size: 20px;
+    font-weight: 900;
+}
+nav .gnb li:hover a{
+    color: #62a1fe;
+}
+
+nav .search{
+    width: 60px;
+    height: 40px;
+    /* background-color: aqua; */
+    position: relative;
+}
+nav .search::before{
+    content:'|';
+    line-height: 40px;
+    color: #aaa;
+}
+nav .search a{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/spr_layout.png) no-repeat -3px -29px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -9px;
+    margin-left: -9px;
+    font-size: 0;
+}
+
+.util{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 72px;
+}
+.util .login{
+    color: #aaa;
+    font-size: 13px;
+}
+.util .login::before{
+    content: '';
+    background: url(../images/spr_layout.png) no-repeat -109px -27px;
+    padding-left: 20px;
+}
+
+.util .order{
+    color: #aaa;
+    font-size: 13px;
+}
+.util .order::before{
+    content: '';
+    background: url(../images/spr_layout.png) no-repeat -150px -27px;
+    padding-left: 20px;
+}
+
+.util_etc{
+    margin-top: 14px;
+}
+
+.util_etc li{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+}
+.util_etc li:first-child{
+    margin-right: 14px;
+}
+
+/* header 끝 */
+
+.quickSearch{
+    width: 100%;
+    height: 115px;
+    background: #f8f8f8 url(../images/bg_mainR.png) repeat-x 0 bottom;
+    padding-bottom: 115px;
+}
+
+.searchBtn{
+    width: 550px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.searchBtn li{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #fff;
+    float: left;
+    margin: 0 15px;
+    position: relative;
+    font-size: 0;
+}
+
+.searchBtn li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.searchBtn li a::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/spr_layout.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.searchBtn li:nth-child(1) a::after{
+    background-position: 0 -100px;
+}
+.searchBtn li:nth-child(2) a::after{
+    background-position: -35px -100px;
+}
+.searchBtn li:nth-child(3) a::after{
+    background-position: -68px -100px;
+}
+.searchBtn li:nth-child(4) a::after{
+    background-position: -103px -100px;
+}
+.searchBtn li:nth-child(5) a::after{
+    background-position: -173px -100px;
+}
+.searchBtn li.on{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #62a1fe;
+    
+}
+/* .searchBtn li.on a::after{
+    content: '';
+    width: 9px;
+    height: 9px;
+    background-color: #62a1fe;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    margin-left:-4px;
+    transform: rotate(45deg) skew(8deg,8deg);
+}
+.searchBtn li.on a::after{
+    background: url(../images/spr_layout.png) no-repeat -173px -68px;
+} */
+
+.searchForm{
+    width: 600px;
+    margin: 40px auto;
+    display: flex;
+}
+.searchForm label{
+    display: none;
+}
+.searchForm input{
+    width: 520px;
+    height: 64px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: #00000014;
+    padding-left: 20px;
+    outline: none;
+}
+.searchForm input::placeholder{
+    color: #ccc;
+}
+.searchForm .submit{
+    border: 0;
+    background: #62a1fe;
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    margin-left: 16px;
+    font-size: 0;
+    position: relative;
+}
+.searchForm .submit::after{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url(../images/spr_layout.png) no-repeat -46px -27px;
+    position: absolute;
+    top: 50%; left: 50%;
+    margin-top: -9px;
+    margin-left: -9px;
+}
+
+
+.mainVisual{
+    margin-top: 80px;
+    position: relative;
+}
+.mainVisual video{
+    width: 100%;
+    min-width: 1136px;
+}
+.mainVisual .visualTxt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+.mainVisual .visualTxt img{
+    margin-bottom: 40px;
+}
+.mainVisual .visualTxt p{
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.5em;
+
+}
+.mainVisual .visualTxt a{
+    display: block;
+    margin-top: 70px;
+    background: url(../images/more.png) no-repeat 200px center / auto 14px;
+    font-size: 20px;
+}
+
+/* mainVisual 끝 */
+
+#container h2{
+    font-family: 'NanumSquareRound';
+    font-weight: 900;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.promotion{
+    width: 1136px;
+    margin: 110px auto; 
+}
+.promList{
+    display: flex;
+    justify-content: space-between;
+}
+.promList li{
+    width: 368px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.promList li img{
+    width: 100%;
+    height: auto;
+}
+
+.promDots{
+    width: 62px;
+    margin: 30px auto 0 auto;
+}
+.promDots li{
+    float: left;
+    margin: 0 2px;
+}
+.promDots li a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #aaa;
+    font-size: 0;    
+}
+
+.promDots li.active a{
+    width: 30px;
+    border-radius: 10px;
+    background-color: black;
+}
+.theme{
+    width: 1136px;
+    margin: 0 auto;
+}
+.themeStory{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.themeStory li{
+    width: 368px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.themeStory li img{
+    width: 100%;
+    height: auto;
+}
+
+.themeStory li .over{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0)48% #000 100);
+}
+
+.themeStory li .over .overTxt{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+.themeStory li .over h3{
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.themeStory li .over p{
+    font-size: 15px;
+    color: #fff;    
+}
+.themeList{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.themeList li{
+    margin: 0 8px;
+}
+.themeList li a{
+    display: block;
+    padding: 19px 20px;
+    background-color: #f8f8f8;
+    border-radius: 400px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+.service{
+    width: 1136px;
+    margin: 110px auto 0 auto;
+}
+
+.servList{
+    display: flex;
+    justify-content: center;
+}
+.servList li{
+    text-align: center;
+    margin: 0 8px 60px 8px;
+}
+.servList li div{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 1px solid #aaccff;
+    box-shadow: 0 0 10px #62a1fe;
+    margin: 0 auto 20px auto;
+    position: relative;
+    font-size: 0;
+}
+
+.servList div::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/spr_mainicon.png);
+    background-repeat: no-repeat;
+}
+.servList li:nth-child(1) div::after{
+    background-position: -0px 0;
+}
+.servList li:nth-child(2) div::after{
+    background-position: -32px 0;
+}
+.servList li:nth-child(3) div::after{
+    background-position: -64px 0;
+}
+.servList li:nth-child(4) div::after{
+    background-position: -96px 0;
+}
+.servList li:nth-child(5) div::after{
+    background-position: -128px 0;
+}
+.servList li:nth-child(6) div::after{
+    background-position: -160px 0;
+}
+.servList li p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* .servNews{
+    width: 100%;
+    min-width: 1136px;
+    height: 140px;
+    background: #f8f8f8 url(../images/bg_news.png) repeat-x 0 bottom;
+    text-align: left;
+    
+}
+.servNews h4{
+    margin: 8px auto;
+    font-size: 22px;
+    color: #202020;
+
+}
+.servNews p{
+
+    display: block;
+    font-size: 19px;    
+
+}
+
+.servNews .email{}
+.email .text{
+    width: 270px;
+    height: 56px;
+}
+.email .button{
+    width: 88px;
+    height: 56px;
+} */
+
+.servNews{
+    width: 1136px;
+    height: 140px;
+    background: #f8f8f8 url(../images/bg_news.png) no-repeat;
+    margin: 0 auto 110px auto;
+    position: relative;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.servNews h4{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.servNews p{
+    font-size: 19px;
+    color: #aaa;
+}
+.servNews .email{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+}
+.servNews .email input{
+    width: 270px;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.servNews .email input::placeholder{
+    color: white;
+}
+.servNews .email button{
+    width: 88px;
+    height: 56px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #62a1fe;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+/*servNews 끝*/
+.ft_top{
+    border-top: 1px solid#ddd;
+}
+.top_inner{
+    width: 1136px;
+    margin: 0 auto;
+    display: flex;
+}
+.top_inner .ft_menu{
+    width: 376px;
+    border-right: 1px solid #eee;
+    padding: 45px 0 60px;
+    box-sizing: border-box;
+    display: flex;
+}
+.top_inner .ft_menu dl{
+    width: 125px;
+}
+.top_inner .ft_menu dl dt{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.top_inner .ft_menu dl dd{
+    line-height: 35px;
+    color: #444;
+}
+.top_inner .ft_app{
+    width: 384px;
+    padding: 45px 40px 0;
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+    background: url(../images/bg_appDown.png) no-repeat 265px 40px / 80px auto;
+}
+.top_inner .ft_app dl dt{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.top_inner .ft_app dl dd{
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #777;
+}
+.top_inner .ft_app .applink a{
+    display: inline-block;
+    width: 147px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 20px;
+    box-sizing: border-box;
+    position: relative  ;
+}
+.top_inner .ft_app .applink a::after{
+    content: '';
+    position: absolute;
+    left: 34px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 19px;
+    background: url(../images/spr_layout.png) no-repeat -3px -135px;
+}
+.top_inner .ft_app .applink a:nth-child(2):after{
+    background-position: -30px -135px;
+}
+.top_inner .ft_tel{
+    padding: 45px 40px 0;
+    width: 376px;
+    box-sizing: border-box;
+    position: relative;
+}
+.top_inner .ft_tel dl dt{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.top_inner .ft_tel dl dd{
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.top_inner .ft_tel .tel{
+    position: absolute;
+    right: 0;
+    top: 42px;
+}
+.top_inner .ft_tel .tel .tit{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.top_inner .ft_tel .tel p{
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5em;
+}
+.top_inner .ft_tel .tel p span{
+    display: inline-block;
+    width: 70px;
+}
+.snsList li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.snsList li a{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/spr_layout.png) no-repeat -86px -132px;
+    font-size: 0;
+}
+.snsList li:nth-child(2){
+    background-position: -154px -132px;
+}
+.ft_bottom{
+    background: #18225d url(../images/bg_footPattern.png) repeat-x;
+}
+.bt_inner{
+    width: 1136px;
+    margin: 0 auto;
+    padding: 60px 0;
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+}
+.fmenu li{
+    display: inline-block;
+    margin-bottom: 20px;
+
+}
+.fmenu li:nth-child(1){
+    border-right: 1px solid #fff;
+    margin-right: 10px;
+    padding-right: 16px;
+    line-height: 12px;
+    color:#fff;
+    font-weight: 500;
+}
+.bt_inner p{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.fTxt1{
+    display: flex;
+    align-items: baseline;
+}
+.fTxt1 span{
+    display: block;
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+    margin-right: 10px;
+    padding-right: 10px;
+    line-height: 10px;
+} 
+.fTxt1 span:nth-child(2),
+.fTxt1 span:nth-child(5){
+    border-right: 0;
+    padding-right: 0;
+}
+
+.fTxt1 .box{
+    display: block;
+    width: 80px;
+    height: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    font-size: 11px;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    margin-right: 10px;
+}
+.fTxt1 .box:hover{
+    background-color: #fff;
+    color: #18225d;
+    font-weight: bold;
+}
+.ft_etc{
+    position: absolute;
+    right: 0;
+    top: 60px;
+    display: flex;
+}
+.ft_etc span{
+    display: block;
+    width: 72px;
+    height: 72px;
+    background: url(../images/spr_layout.png) no-repeat 0 -165px;
+}
+.ft_etc span:nth-child(2){
+    background-position: -74px -165px;
+    margin-left: 16px;
+}
+
+aside{
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    margin-left: 592px;
+}
+aside #goTop{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 0;
+    cursor: pointer;
+    font-size: 0;
+    position: relative;
+    
+}
+aside #goTop{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -7px 0 0 -7px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/spr_layout.png) no-repeat -26px -28px;
+}

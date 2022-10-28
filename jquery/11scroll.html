@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+        }
+
+        ul li {
+            margin-left: 30px;
+        }
+
+        ul li a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        ul li.on a {
+            color: #fff;
+        }
+
+        #wrap>div {
+            height: 100vh;
+        }
+
+        .box1 {
+            background-color: palevioletred;
+        }
+
+        .box2 {
+            background-color: peachpuff;
+        }
+
+        .box3 {
+            background-color: cadetblue;
+        }
+
+        .box4 {
+            background-color: powderblue;
+        }
+
+        .box5 {
+            background-color: plum;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="on"><a href="#">S_#01</a></li>
+        <li><a href="#">S_#02</a></li>
+        <li><a href="#">S_#03</a></li>
+        <li><a href="#">S_#04</a></li>
+        <li><a href="#">S_#05</a></li>
+    </ul>
+    <div id="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </div>
+
+    
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script>
+        let winHeight = $(window).height();
+        $(window).on('resize', function () {
+            winHeight = $(window).height();
+        });
+
+        $('ul li').on('click', function () {
+            let i = $(this).index();
+            $('html, body').animate({
+                scrollTop: winHeight * i
+            });
+        }); // ul>li click
+
+        function scrollPage() {
+            let scr = $(window).scrollTop();
+            for (let i = 0; i < $('ul li').length; i++) {
+                if (scr >= winHeight * i && scr < winHeight * (i + 1)) {
+                    $('ul li').removeClass('on');
+                    $('ul li').eq(i).addClass('on');
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

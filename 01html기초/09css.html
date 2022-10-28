@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        #ye{
+        color: yellow;
+        font-size: 20px;
+        }    
+        header>ul>li:first-child {color:purple;
+        }
+        header>ul>li:first-child:hover{
+            color:red;
+        }
+        header>ul>li:nth-child(3) {
+            color:yellow;
+        }
+
+    </style>
+
+        <!--
+        css 작성 방법
+        1.인라인 스타일
+        2.내부 스타일
+        3.외부 스타일
+
+        선택자{속성:속성값; 속성:속성값;}
+
+        div{} 태그이름 - 태그 선택자
+        #ye{} - id 선택자
+        div, #ye, #class - class 선택자
+        
+
+        [태그에 id로 이름을 지어줄때]
+        id 선택자는 웹페이지 내부에서 중복되면 안된다.
+        유니크한 작동을 하거나 특정한 하나의 태그를 선택할 때 사용
+
+        [태그에 class로 이름을 지어줄때]
+        웹페이지 개발 시 가장 많이 사용하고 중복해서 써도 됨
+
+        이름 지을 때 주의할 점
+        1. 영문으로만 작성할 것
+        2. 숫자로 시작하면 안됨
+        3. 띄워쓰기 안됨
+        4. 대소문자 구분해야됨
+        ex> main-visual  < / main_visual < / mainVisual
+        ('-'은 한번에 클릭 안됨. '_'는 한번에 클릭 가능).
+        5. 부모태그 / 자식태그 ex-> 자식태그는 부모태그 안에 위치해야함
+        <ul>
+            <li>
+
+            </li>
+        </ul>
+        6. 자식태그에 별도로 스타일을 지정하지 않으면
+        부모태그에 있는 스타일 속성들이 자식태그로 '상속' 된다.
+        7. 자식태그 중 특정 태그를 들고 올때는 자식태그의 순서로 하단과 같이 작성하여 부른다.
+           선택자:first-child{}
+           선택자:last-child{}
+           선택자:nth-child(n){}
+        8.div:hover{} div태그에 사용자가 마우스를 올렸을때 나타날 css 작성
+    -->
+
+</head>
+
+<body>
+
+    
+    <div id="ye">텍스트를 빨강으로 만들기</div>
+    <div>텍스트를 노랑으로 만들기</div>
+    <div class="blue">텍스트를 파랑으로 만들기</div>
+
+
+    <header>
+        <ul>
+            <li>목록01</li>
+            <li>목록02
+                <ul>
+                    <li>서브01</li>
+                    <li>서브02</li>
+                    <li>서브03</li>
+                    <li>서브04</li>
+                </ul>
+            </li>
+            <li>목록03</li>
+            <li>목록04</li>
+        </ul>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+#header{
+    width: 100%;
+    background-color: #3b505d;
+}
+.headerin{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+.headerin .logo{
+    color:#ebe6e4;
+    padding:20px 0;
+}
+.headerin .gnb{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.headerin .gnb li{
+    float: left;
+    margin-left: 15px;
+}
+.headerin .gnb li a{
+    color: #ebe6e4;
+}
+
+/* header 끝 */
+
+#mainVisual{
+    width: 100%;
+    height: 450px;
+    background:url(../img/mainVisual.jpg) no-repeat center center;
+    position: relative;
+}
+
+#mainVisual p{
+    font-size: 60px;
+    letter-spacing:  30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #3b505d;
+}
+
+/* mainVisual 끝 */
+
+.cont1{
+    width: 100%;
+    background-color: #ebe6e4;
+}
+.cont1in{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.cont1in li{
+    width: 241px;
+    height: 360px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.cont1in li:last-child{
+    margin-right: 0;
+}
+
+.cont1in li .over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    line-height: 360px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.cont1in li:hover .over{
+    opacity: 1;
+}
+
+/* cont1끝 */
+
+.cont2{
+    width: 100%;
+    background-color: #ceb0ae;
+    padding: 48px 0 32px 0;
+}
+.cont2 h2{
+    text-align: center;
+    font-size: 36px;
+    color: #3b505d;
+}
+.cont2 p{
+    width: 1024px;
+    margin: 20px auto;
+    text-align: center;
+    color: #3b505d;
+}
+.cont2 a{
+    display: block;
+    width: 175px;
+    height: 45px;
+    background-color: #3b505d;
+    color: #ebe6e4;
+    text-align: center;
+    line-height: 45px;
+    margin: 0 auto;
+}
+
+/* cont2끝 */
+
+#footer{
+    width: 100%;
+    background-color: #3b505d;
+    padding: 23px 0;
+}
+.fmenu{
+    width: 1024px;
+    margin: 0 auto;
+    
+}
+.fmenu li{
+    float: left;
+    margin-right: 10px;
+}
+.fmenu li::after{
+    content: '|';
+}
+.fmenu li:last-child::after{
+    content: '';
+}
+.fmenu li{
+    color: #eee;
+}

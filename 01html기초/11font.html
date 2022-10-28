@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang=ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font</title>
+
+    <style>
+        @font-face {
+        font-family: 'PyeongChangPeace-Light';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
+        font-weight: 300;
+        font-style: normal;
+        }
+
+        @import url('https://fonts.googleapis.com/css2? family= Nanum+Gothic & display=swap');
+
+        @font-face {
+            font-family: 'Authentic-Signature';
+            src: url(font/Authentic-Signature.ttf);
+        }
+
+        body{
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .f1{
+            
+            font-size: 60px;
+            font-family: 'PyeongChangPeace-Light';
+            
+        }
+        .f2{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        h1{
+            font-weight: normal;
+            font-size: 16px;
+        }
+        .f3{
+            font-style: italic;
+        }
+        address{
+            font-style: normal;
+        }
+        .f4{
+            color: blue;
+            text-decoration:underline;
+
+        }
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        .f5{
+            text-align: center;
+            /*블록요소에서만 사용할 수 있고, 블록요소 안에 있는 인라인요소를 정렬한다.*/
+            line-height: 150px;
+            letter-spacing: 20px;
+            /* 글자 사이 간격도 조정 가능, - + 로 원하는 값 설정 가능 */
+        }
+        .dummy{
+            font-family: 'Authentic-Signature';
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<p class="f1">폰트 스타일 지정하기</p>   
+<p class="f2">폰트 스타일 지정하기</p>   
+<h1>폰트 스타일 지정하기(제목태그)</h1>   
+<p class="f3">폰트 스타일 지정하기</p>
+<address>폰트 스타일 지정하기(시멘틱태그)</address>   
+<p class="f4">폰트 스타일 지정하기</p>
+<a href="#">폰트 스타일 지정하기(링크태그)</a>   
+<p class="f5">폰트 스타일 지정하기</p>
+<p class="f6">폰트 스타일 지정하기</p>
+<p class="dummy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum dolorem quae fugit minima eum consectetur non pariatur nemo! Fugit error animi tempore reiciendis eum modi numquam? Modi ullam reprehenderit iusto!</p>   
+
+</body>
+
+</html>

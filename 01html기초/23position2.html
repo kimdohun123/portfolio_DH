@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue {
+            width: 400px;
+            height: 340px;
+            background-color: skyblue;
+            position: relative;
+        }
+
+        .blue>div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .blue .p1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .blue .p2 {
+            position: absolute;
+            top: 100px;
+            left: 0;
+        }
+
+        .blue .p2 .s1 {
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+
+            /* 부모태그에 이미 position속성이 있을 때 (relative을 줄 수 없을 때) 자신과 가장 가까운 부모태그의 position값을 기준으로 한다 */
+
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .blue .p3 {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            background-color: hotpink;
+        }
+
+        .blue .p4 {
+            position: absolute;
+            top: 140px;
+            left: 200px;
+        }
+
+        .blue .p5 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .blue .p6 {
+            position: absolute;
+            right: 0;
+            bottom: 40px;
+        }
+
+        .blue .p6 .s2 {
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    파란박스 : width:400; height:340;
+    분홍박스 : width:100; height:100;
+    검정박스 : width:40; height:40;
+    -->
+
+    <div class="blue">
+        <div class="p1">1</div>
+        <div class="p2">2
+            <div class="s1"></div>
+        </div>
+        <div class="p3">3</div>
+        <div class="p4">4</div>
+        <div class="p5">5</div>
+        <div class="p6">6
+            <div class="s2"></div>
+        </div>
+    </div>
+</body>
+
+</html>

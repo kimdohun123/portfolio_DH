@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/jqurey-3.6.1.min.js"></script>
+    <script>
+        let today = new Date();
+        let year = today.getFullYear();
+        // console.log(year);
+        let month = today.getMonth();
+        // console.log(month);
+        let _date = today.getDate();
+        let day = today.getDay();
+        // console.log(day);
+        // 일 0, 월 1, 화 2, 수3, 목4, 금5, 토 6,
+
+        let print = ['일', '월', '화', '수', '목','금', '토']
+        console.log(print)
+
+        document.write(year + '년' + (month + 1) + '월' + _date + '일' + print[day] + '요일');
+
+    </script>
+</body>
+</html>

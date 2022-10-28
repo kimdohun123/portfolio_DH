@@ -1,0 +1,699 @@
+.header_inner {
+    width: 1200px;
+    height: 95px;
+    margin: 0 auto;
+    background-color: aqua;
+    position: relative;
+}
+
+.header_inner .logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header_inner .logo img {
+    width: auto;
+    height: 30px;
+}
+
+.header_inner .gnb {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_inner .gnb li {
+    margin: 0 24px;
+}
+
+.header_inner .gnb li:hover a {
+    color: #f26d82;
+}
+
+.header_inner .util {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+}
+
+.header_inner .util li {
+    margin-left: 24px;
+    transform: scale(0.8);
+    opacity: 0.6;
+    transition: all 0.6s;
+}
+
+.header_inner .util li:hover {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+}
+
+#mainVisual {
+    height: 475px;
+}
+
+#mainVisual div {
+    height: 100%;
+    background: url(../img/mainVisual.jpg) no-repeat center center;
+    font-size: 0;
+}
+
+.gift {
+    width: 1200px;
+    margin: 95px auto;
+}
+
+.gift h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-family: 'Cafe24Dangdanghae';
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list li {
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.6s;
+}
+
+.list li:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.rev {
+    width: 100%;
+    height: 380px;
+    background: url(../img/reservation.jpg) no-repeat center center / 100% auto;
+    position: relative;
+}
+
+.rev div {
+    width: 1200px;
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 10px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s;
+}
+
+.rev:hover div {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.rev div p {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Cafe24Dangdanghae';
+    letter-spacing: 2px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.tour {
+    width: 1200px;
+    margin: 95px auto;
+}
+
+.tour h2 {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-family: 'Cafe24Dangdanghae';
+}
+
+.tour ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour ul li {
+    width: 275px;
+}
+
+.tour ul li .t_img {
+    width: 100%;
+    height: 275px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tour ul li .t_img img {
+    width: 100%;
+    height: auto;
+    transition: all 1s;
+}
+
+.tour ul li:hover .t_img img {
+    transform: scale(1.1);
+}
+
+.tour ul li .t_txt {
+    margin-top: 16px;
+}
+
+.tour ul li .t_txt h4{
+    font-size: 20px;
+    color: #f26d82;
+    font-weight: 600;
+}
+
+.tour ul li .t_txt .hash{
+    color: #666;
+    margin:  6px 0 12px 0;
+}
+
+.tour ul li .t_txt .price span{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.tour ul li:hover .t_txt .price span{
+    color: #f26d82  ;
+}   
+
+#footer{
+    border-top: 1px solid #ddd;
+}
+
+.ft_inner{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    background: url(../img/ft_logo.png)no-repeat right center / auto 30px;
+    color: #666;
+}
+
+.ft_menu{
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.ft_menu li{
+    border-right: 1px solid #aaa;
+    margin-right: 10px;
+    padding-right: 10px;
+    line-height: 12px;
+}
+
+.ft_menu li:last-child{
+    border-right: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.ft_menu .pink{
+    color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+#header{
+    background-color: #f8f8f8;
+    height: 104px;
+    width: 1650px;
+    padding: 0 72px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#header .logo{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#header .logo a{
+    background: url(../img/ft_logo.png) no-repeat 0 0 ;
+    display: block;
+    width: 250px;
+    height: 50px;
+    font-size: 0;
+}
+
+#header .gnb{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .gnb li{
+    display: inline-block;
+    margin: 0 15px;
+    font-family: 'NanumSquareRound';
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#header .gnb li:hover a{
+    color: #f8f8f8;
+}
+
+.util{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 72px;
+}
+
+.util .insta{
+    color: #aaa;
+    font-size: 35px;
+}
+.util .insta::before{
+    content: '';
+    background: url(../img/ico_insta.png) no-repeat;
+    padding-left: 70px;
+}
+
+.util .my{
+    color: #aaa;
+    font-size:35px;
+}
+.util .my::before{
+    content: '';
+    background: url(../img/ico_my.png) no-repeat;
+    padding-left: 70px;
+}
+
+
+
+#mainVisual{
+    position: relative;
+    height: 650px;
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    background: url(../img/mainVisual.jpg)no-repeat center center;
+}
+
+
+
+.spacialgift{
+    width: 100%;
+}
+
+.spacialgift p{
+    font-family: 'NanumSquareRound';
+    font-weight: 900;
+    font-size: 45px;
+    text-align: center;
+    margin: 50px;    
+}
+
+.gift{
+    width: 1650px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gift li{
+    width: 368px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 100px;
+
+}
+
+
+
+.reservation{
+    position: relative;
+}
+
+.reservation .rbackg{
+    width: 100%;
+    height: 400px;
+    background: url(../img/reservation.jpg)no-repeat center center;
+    margin-bottom: 100px;
+}
+
+
+
+
+.reservation .rbackg p{
+    position: absolute;
+    top: 50%;
+    left: 42.5%;
+    color: #f8f8f8;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+
+.specialtour{
+    width: 1650px;
+    margin: 100px auto; 
+    
+}
+
+.specialtour .spe{
+    font-family: 'NanumSquareRound';
+    font-weight: 900;
+    font-size: 45px;
+    margin-bottom: 25px;
+    
+}   
+
+.tour{
+    display: flex;
+    justify-content: center;
+}
+
+.tour li{
+    width: 360px;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.tour li img{
+    width: 100%;
+    height: auto;
+}
+
+.tourtext{
+    
+}
+
+.tourtext p{
+    
+}
+
+.tourtext dt{
+    
+}
+
+.tourtext dl{
+    
+} */

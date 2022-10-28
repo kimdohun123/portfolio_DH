@@ -1,0 +1,250 @@
+#header{
+    width: 100%;
+    background-color: darkgreen;
+}
+.headerin{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+.headerin .logo{
+    color: #ebe6e4;
+    padding: 20px 0;
+    font-size: 38px;
+    padding: 35px;
+}
+.headerin .gnb{
+    position: absolute;
+    left: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.headerin .gnb li{
+    float: left;
+    margin-left: 30px;
+}
+.headerin .gnb li a{
+    color: #ebe6e4;
+}
+.headerin .util{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.headerin .util li{
+    float: left;
+    margin-left: 20px;
+}
+
+
+/*header끝*/
+
+#mainVisual{
+    position: relative;
+    width: 100%;
+}
+.mvImg{
+    height: 655px;
+    background: url(../img/mainVisual.jpg)no-repeat center center / cover;
+    font-size: 0;
+}
+.bg{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+#mainVisual p{
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 20px;
+}
+
+
+.prod{
+    width: 1024px;
+    margin: 50px auto;
+    
+}
+.prod h2{
+    text-align: center;
+    font-size: 38px;
+}
+.prod>p{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.prod_list li{
+    width: 328px;
+    height: 430px;
+    margin-right: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.prod_list li:last-child{
+    margin-right: 0;
+    
+}
+.prod_list li .over{
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);;
+    color: #fff;
+    padding: 110px 50px;
+    opacity: 0;
+    transform: all 0.4s;
+}
+.prod_list li .over:hover{
+    opacity: 1;
+}
+.prod_list li .over h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.prod_list li .over .sub_tit{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.prod_list li .over .sub_txt{
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.prod_list li .over .btn{
+    display: block;
+    width: 131px; height: 45px;
+    border: 1px solid #fff;
+    line-height: 45px;
+    background: url(../img/ico_right.png) no-repeat 121px right center;
+    padding: 0 20px;
+}
+.prod_list li .over .btn:hover{
+    background-color: #fff;
+    background-image: url(../img/ico_right_on.png) no-repeat 121px right center;
+    color: #375a35;
+}
+.bn{
+    width: 100%;
+    background-color: #ebe6e4;
+}
+.bnIn{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 98px 0;
+    background:url(../img/bn_pots.png) no-repeat right center;
+}
+.bnIn .txtWrap{
+    width: 670px;
+    text-align:center;
+}
+.bnIn .txtWrap h2{
+    font-size: 35px;
+    margin: 25 0px;
+    margin-bottom: 25px;
+}
+.bnIn .txtWrap p{
+    margin: 25 0px;
+    font-size: 18px;
+}
+.bnIn .txtWrap a{
+    display: block;
+    width: 153px;
+    height: 45px;
+    line-height: 45px;
+    background:url(../img/ico_right_on.png) no-repeat 140px center;
+    color: #fff ;
+    margin: 0 auto;
+    background-color: #375a35;
+    text-align: left;
+    padding: 0 20; 
+    border: 1px solid transparent
+}
+.bnIn .txtWrap a:hover{
+    border: 1px solid #375a35;
+    background-color: none;
+    background-image: url(../img/ico_right_on.png);
+    background-color: transparent;
+}
+
+.ftTop{
+    width: 100%;
+    background-color: #375a35;
+}
+.ftin{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+.ftin .fmenu{
+    padding: 22px 0;
+
+}
+.ftin .fmenu li{
+    float: left;
+margin-right: 10px;
+border-right: 1px solid #fff;
+padding-right: 10px;
+line-height: 1em;
+
+}
+.ftin .fmenu li a{
+    color: white;
+    opacity: 0.8;
+
+}.ftin .fmenu li:hover a{
+    opacity: 1;
+}
+.ftin .fmenu li:last-child{
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+}
+.ftin .fsns{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ftin .fsns li{
+    float: left;
+    margin-left: 17px;
+}
+.ftBottom{
+    width: 100%;
+    background-color: #0e290d;
+}
+.fbin{
+    width: 1024px;
+    margin: 0 auto;
+}
+.fbin .flogo{
+    font-size: 38px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 62px;
+}
+.fbin .ftxt{
+    font-size: 13   px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 50;
+    float: left;
+    margin-left: 40px;
+}
+.fbin .ftxt .p :last-child{
+    margin-left: 0;
+} 
+
+
+

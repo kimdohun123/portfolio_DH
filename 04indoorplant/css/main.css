@@ -1,0 +1,158 @@
+#header{
+    width: 100%;
+    background-color: darkgreen;
+}
+.headerin{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+.headerin .logo{
+    color: #ebe6e4;
+    padding: 20px 0;
+}
+.headerin .gnb{
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.headerin .gnb li{
+    float: left;
+    margin-left: 15px;
+}
+.headerin .gnb li a{
+    color: #ebe6e4;
+}
+.headerin .mypage{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.headerin .mypage li{
+    float: left;
+    margin-right: 15px;
+}
+.headerin .mypage li a{
+    color: #ebe6e4;
+}
+/* hearder 끝 */
+
+#mainVisual{
+    width: 100%;
+    height: 450px;
+    background: url(../img/mainVisual.jpg) no-repeat center center;
+    position: relative;
+}
+#mainVisual p{
+    font-size: 45px;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:white;
+}
+/*mainVisual 끝*/
+
+.cont1{
+    width: 100%;
+    background-color: white;
+}
+.cont1in {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.cont1in li{
+    width: 321.33px;
+    height: 450px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.cont1in li:last-child{
+    margin-right: 0;
+}
+.cont1in li .plam{
+    position:absolute;
+    top:0%;
+    left:0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 225px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.cont1in li:hover .plam{
+    opacity: 1;
+}
+.cont1in li .plam2{
+    position:absolute;
+    top:0%;
+    left:0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 450px;
+    transition: all 0.5s;
+}
+.cont1in li:hover .plam2{
+    opacity: 1;
+}
+
+/* cont1 다시 만지기 */
+
+.cont2{
+    width: 100%;
+    background-color: ivory;
+    
+}
+.cont2in{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 60px 0 48px 0;
+}
+.cont2in h2{
+    text-align: center;
+    font-size: 32px;
+    color: black;
+}
+.cont2in p{
+    width: 1024px;
+    margin: 20px auto;
+    text-align: center;
+    color: gainsboro;
+}
+.cont2in a{
+    display: block;
+    width: 175px;
+    height: 45px;
+    background-color: darkgreen;
+    color:gainsboro;
+    text-align: center;
+    line-height: 45px;
+    margin: 0 auto;
+}
+.cont2in .pot{
+    margin:  0;
+    padding:  0;
+    width: 100%;
+    height: 35px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    line-height: 45px;
+    
+}

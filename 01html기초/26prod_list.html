@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26prod_list</title>
+    
+    <style>
+        /*
+        전체 여백들 0만들기
+        ul 불릿 X
+        a 밑줄 X 글자색 바꾸기
+        img 정렬
+
+        안전사이즈 1080px > 브라우저 중앙 위치
+        제목 아래쪽에 밑줄긋기
+        li 사이 여백 15px / 마지막 li 여백 없음
+        li w,h 340px
+        */
+        
+            * {
+            margin: 0;
+            padding: 0;
+            }
+        
+            ul {
+                list-style: none;
+            }
+        
+            a {
+                text-decoration: none;
+                color:inherit;
+            }
+        
+            img {
+                vertical-align: top;
+            }
+
+            .wrap{
+                width:1080px;
+                margin: 0 auto;
+            }
+
+            h1 {
+                margin:40px 0;
+                border-bottom: 1px solid #000;
+                padding-bottom: 30px;
+            }
+
+            .prod_list li{
+                display: inline-block;
+                margin-right: 15px;
+                width: 340px;
+                height: 340px;
+                overflow: hidden;
+        }
+            .prod_list li:last-child{
+                margin-right: 0;
+        }
+            .prod_list li .caption{
+            background-color: rgba(0,0,0,0.4);
+            color:#fff;
+            padding: 15px 10px;
+            transition: all 0.4s;
+        }
+            .prod_list li:hover .caption{
+                transform: translate(-100%);
+            }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        
+        <h1>신상품 목록</h1>
+        
+        
+        <ul class="prod_list">
+            <li>
+                <a href="#">
+                    <div><img src="img/prod01.jpg"></div>
+                    <div class="caption">
+                        <h2>상품명01</h2>
+                        <p>상품 설명 텍스트</p>
+                        <p>가격 : 123,456원 </p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <div><img src="img/prod02.jpg"></div>
+                    <div class="caption">
+                        <h2>상품명02</h2>
+                        <p>상품 설명 텍스트</p>
+                        <p>가격 : 123,456원 </p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <div><img src="img/prod03.jpg"></div>
+                    <div class="caption">
+                        <h2>상품명03</h2>
+                        <p>상품 설명 텍스트</p>
+                        <p>가격 : 123,456원 </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

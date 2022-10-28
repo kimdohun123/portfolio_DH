@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <style>
+        /*글 자 폰 트 색 상 설 정*/
+        .c1{
+            color: tomato;
+        }
+        .c2{
+            color:#ff0000;            
+        }
+        .c3{
+            color:rgb(255, 0, 0);
+        }
+        .c4{
+            color:rgba(255,0,0,0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="c1">키워드 입력</p>
+    <!-- 단어로 표현할 수 있는 색상은 한정적 -->
+    <p class="c2">HEX코드 입력</p>
+    <!-- #ffffff ~ #000000 사이의 숫자 조합 
+    #fff, #000, 2개씩 끊어서 봤을 때 중복되면 생략 가능
+    -->
+    <p class="c3">RGB 색상</p>
+    <!--
+        0~255까지의 숫자 조합으로 색상 설정 가능
+    -->
+    <p class="c4">RGBA 색상</p>
+    <!--
+        RGB 색상단위에 알파값(투명도) 조절
+        hsl 색, 채도, 명도 hsla값(투명도)
+    -->
+</body>
+
+</html>

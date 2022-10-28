@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 양식 태그</title>
+</head>
+<body>
+    <form>
+        <label for="user_id">ID</label>
+        <input type="text" id="user_id" placeholder="아이디를 입력해주세요." maxlength="8" required>
+
+        <label for="user_password">PASSWORD</label>
+        <input type="password" id="user_password" placeholder="비밀번호를 입력해주세요." maxlength="12" required>
+<p>
+        <label for="user_birthday">생년월일</label>
+        <input type="text" id="user_birthday" placeholder="년(4자)" maxlength="4">
+        <input type="text" id="user_birthday" placeholder="월(2자)" maxlength="2">
+        <input type="text" id="user_birthday" placeholder="일(2자)" maxlength="2" size="4">
+
+        <p>
+        <label><input type="radio" id="g1" name="g">남성</label>
+        <label><input type="radio" id="g2" name="g">여성</label>
+        <label><input type="radio" id="g3" name="g">선택안함</label>
+        </p>
+
+        <label><input type="checkbox" id="h1" name="h">책읽기</label>
+        <label><input type="checkbox" id="h2" name="h">밥먹기</label>
+        <label><input type="checkbox" id="h3" name="h">똥싸기</label>
+        
+        <p>
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소하기">
+        </p>
+
+        <a href="http://naver.com">
+        <input type="button" value="홈으로 가기">
+        </a>
+        
+</p>
+    </form>
+</body>
+
+</html>

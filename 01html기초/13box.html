@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border: 10px solid #000;
+            padding: 10px;
+            margin: 20px;
+        }
+        .box{
+            box-sizing: border-box;
+        }
+        .dd{
+            width: 250px;
+            height: 250px;
+            border: 5px solid #000;
+            padding: 10px 15px;
+            margin: 5px;
+        }
+        /*
+            태그가 차지하는 공간값
+            width
+            height
+            border 테두리
+            padding 테두리 안쪽으로 추가되는 여백
+            margin 테두리 바깥쪽으로 추가되는 여백
+        */
+
+        /*
+            box-sizing
+            :content-box - 기본값, width/height값 바깥쪽으로 border/padding 적용
+            :border-box - width/height 값 안쪽으로 border/padding 적용
+        */
+        
+        
+        /*
+        width:250px;
+        border:5px solid #000;
+        padding:10px 15px;
+        margin:5px;
+
+        위 태그가 차지하는 가로 영역은 몇px일까요?
+        250+(5+5)+(15+15)+(5+5) = 300px
+
+        [태그가 차지하는 가로 영역]
+        width + border 좌우+ margin 좌우 + padding
+        */
+    </style>
+</head>
+
+
+<body>
+
+    <div>태그가 차지하는 공간값</div>    
+    <div class="box"></div>
+    <div class="dd"></div>
+</body>
+
+
+</html>

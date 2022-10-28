@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_inner">
+            <h1 class="logo"><a href="#"><img src="img/logo.png"></a></h1>
+            <button class="open"><img src="img/open.png"></button>
+            <nav>
+                <button class="close"><img src="img/close.png"></button>
+                <ul class="gnb">
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">SPECIAL GIFT</a></li>
+                    <li><a href="#">RESERVATION</a></li>
+                </ul>
+                <ul class="util">
+                    <li><a href="#"><img src="img/ico_insta.png"></li></a>
+                    <li><a href="#"><img src="img/ico_my.png"></li></a>
+                </ul>
+            </nav>
+            </div>
+        </header> 
+        <section id="mainVisual">
+            <div>메인비주얼 배경</div>
+        </section>
+        <section id="container">
+            <div class="gift">
+                <h2>SPECIAL GIFT</h2>
+                <ul class="list">
+                    <li><a href="#"><img src="img/gift01.jpg"></a></li>
+                    <li><a href="#"><img src="img/gift02.jpg"></a></li>
+                    <li><a href="#"><img src="img/gift03.jpg"></a></li>
+                </ul>
+                <ul class="pager">
+                    <li class="on"><button>1</button></li>
+                    <li><button>2</button></li>
+                    <li><button>3</button></li>
+                </ul>
+                <div class="arrows">
+                    <button class="left"><img src="img/left.png"></button>
+                    <button class="right"><img src="img/right.png"></button>
+                </div>
+            </div>
+            <div class="res">
+                <a href="#">
+                    <div>
+                        <p>RESERVATION</p>
+                    </div>
+                </a>
+            </div>
+            <div class="tour">
+                <h2>SPECIAL TOUR</h2>
+                <ul>
+                    <li><a href="#">
+                        <div class="t_img"><img src="img/tour01.jpg"></div>
+                        <div class="t_txt">
+                            <h4>호핑투어</h4>
+                            <p class="hash">#플라밍고 #튜브 #무료대여</p>
+                            <p class="price"><span>50,000</span>원</p>
+                        </div>
+                    </a></li>
+
+                    <li><a href="#">
+                        <div class="t_img"><img src="img/tour02.jpg"></div>
+                        <div class="t_txt">
+                            <h4>호핑투어</h4>
+                            <p class="hash">#플라밍고 #튜브 #무료대여</p>
+                            <p class="price"><span>50,000</span>원</p>
+                        </div>
+                    </a></li>
+
+                    <li><a href="#">
+                        <div class="t_img"><img src="img/tour03.jpg"></div>
+                        <div class="t_txt">
+                            <h4>호핑투어</h4>
+                            <p class="hash">#플라밍고 #튜브 #무료대여</p>
+                            <p class="price"><span>50,000</span>원</p>
+                        </div>
+                    </a></li>
+
+                    <li><a href="#">
+                        <div class="t_img"><img src="img/tour04.jpg"></div>
+                        <div class="t_txt">
+                            <h4>호핑투어</h4>
+                            <p class="hash">#플라밍고 #튜브 #무료대여</p>
+                            <p class="price"><span>50,000</span>원</p>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="ft_inner">
+                <ul class="ft_menu">
+                    <li><a href="#">회사소개</a></li>
+                    <li class="pink"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">여행자보험가입안내</a></li>
+                </ul>
+                <p class="copy">COPYRIGHT 2022. ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous">
+    </script>
+
+    <script>
+        $('.open').on('click', function(){
+            $('nav').css({
+                right:0
+            })
+        })
+
+        $('.close').on('click', function(){
+            $('nav').css({
+                right:'-100%'
+            })
+        })
+        $('.pager li').on('click',function(){
+            $(this).addClass('on').siblings().removeClass('on');    
+        })
+        /*
+        여러줄로주석처리하기
+        */
+        //한줄주석처리하기
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible</title>
+    <style>
+        .content{
+            width: 90%;
+            margin: 0 auto;
+            height: 500px;
+            border: 2px solid #000;
+            text-align:  center;
+            display: flex;
+            /* 주축 방향으로 플렉스 아이템을 배치 */
+            justify-content: space-evenly;
+
+            /* 
+            flex-start 기본값/ 주축의 시작점에서부터 배치
+            flex-end 주축 끝점으로 배치
+            center 중앙 배치
+            space-around (빈공간이 있을때/100%못채울때)여백을 아이템에 둘러서 배치
+            space-between (빈공간이 있을때/100%못채울때) 첫번째와 마지막은 양 끝으로 붙고 나머지는 동일한 간격으로 배치
+            space-evenly (빈공간이 있을때/100%못채울때) 동일한 여백 간격으로 배치 
+            */
+        }
+        .content>div{
+            width: 20%;
+        }
+        .content .item1{
+            background-color: beige;
+        }
+        .content .item2{
+            background-color: black;
+        }
+        .content .item3{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="item1">플렉스아이템1</div>
+        <div class="item2">플렉스아이템2</div>
+        <div class="item3">플렉스아이템3</div>
+        
+    </div>
+</body>
+
+</html>

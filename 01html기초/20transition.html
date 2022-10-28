@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+            /* transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.5s; */
+            transition: all 1s;
+            /* 
+            timing-function
+            중간속도 조절
+            linear - 일정한 속도
+            ease - 천천히 시작>빨라졌다가>다시 느려짐
+            ease-in - 천천히 시작
+            ease-out - 천천히 끝남
+            ease-in-out - 천천히 시작>천천히끝남
+            cubic-bazier() - 속도 조절 제어
+            */
+        }
+
+        div:hover {
+            transform: scale(1.7) rotate(360deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

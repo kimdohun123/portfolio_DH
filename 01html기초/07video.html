@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오 태그</title>
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xsUzxQhdOA8?controls=1&playlist=xsUzxQhdOA8&autoplay=1&mute=1&loop=1"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        
+    </iframe>
+
+    <!--
+        boolean(논리형데이터)
+        0 - false / 1 - true
+        controls= 0 안쓰겠다 / controls= 1 쓰겠다
+    -->
+
+
+    <video src="video/Wildlife.mp4" controls poster="img/karina.jpg" autoplay></video>   
+
+    <video controls poster="img/karina.jpg" autoplay>
+        <source src="video/Wildlife.mp4">
+        <source src="video/Wildlife.webm">
+    </video>
+
+    <!--
+        비디오 태그에 입력할수 있는 속성
+        src- 경로지정
+        controls - 컨트롤러 표시
+        autoplay - 자동재생
+        loop - 반복재생
+        muted - 음소거
+        poster - 대기상태일때 표시할 이미지
+
+        웹브라우저에서 지원하는 동영상 파일 형식
+        mp4 - 모두 지원
+        webm - 익스플로러, 사파리 제외 모두 지원
+        ogv - 익스플로러, 사파리 제외 모두 지원
+    -->
+    
+</body>
+
+</html>

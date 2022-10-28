@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wrap</title>
+</head>
+<style>
+        .clear::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    #wrap{
+        width: 900px;
+        height: 600px;
+        background-color: aqua;
+        margin: 0 auto;
+        
+    }
+    #wrap .d1{
+        width: 290px;
+        height: 600px;
+        background-color: violet;
+        float: left;
+        
+    }
+    #wrap .d2{
+        width: 600px;
+        height: 295px;
+        background-color: blueviolet;
+        float: right;
+    }
+    #wrap .d3{
+        width: 295px;
+        height: 295px;
+        background-color: brown;
+        float: left;
+        margin: 10px 10px 0 10px;
+    }
+    #wrap .d4{
+        width: 295px;
+        height: 295px;
+        background-color: thistle;
+        float: left;
+        margin-top: 10px;
+    }
+
+</style>
+<body>
+    <div id="wrap" class="clear">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+    </div>
+</body>
+</html>

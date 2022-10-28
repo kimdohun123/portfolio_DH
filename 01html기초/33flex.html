@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible</title>
+    <style>
+        .content{
+            width: 90%;
+            margin: 0 auto;
+            height: 500px;
+            border: 2px solid #000;
+            text-align:  center;
+            display: flex;
+            /* 
+            
+            flex-direction: row; - 아이템들의 배치 방향 설정
+            기본값 row(주축-가로축/교차축-세로축)
+            flex-wrap: nowrap;- 한줄에 배치할것인지 여러줄에 배치할것인지
+            기본값 row (아이템들의 width를 무시하고 알아서 조절)
+            wrap 여러줄로 배치
+            flex-direction: column-reverse; - 역방향으로 배치
+            flex-flow: row nowrap;
+            
+            
+            */
+        }
+        .content .item1{
+            background-color: beige;
+            width: 33.33%;
+            height: 400px;
+
+        }
+        .content .item2{
+            background-color: black;
+            width: 33.33%;
+            height: 200px;
+        }
+        .content .item3{
+            background-color: blueviolet;
+            width: 33.33%;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="item1">플렉스아이템1</div>
+        <div class="item2">플렉스아이템2</div>
+        <div class="item3">플렉스아이템3</div>
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        #header {
+            width: 100%;
+            height: 100px;
+            background-color: #eee;
+            border-bottom: 1px solid #aaa;
+            box-sizing: border-box;
+        }
+
+        .headerin {
+            width: 1024px;
+            margin: 0 auto;
+            height: 100%;
+            position: relative;
+            z-index: 100;
+        }
+
+        h1 {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .gnb {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            display: flex;
+            height: 40px;
+            overflow: hidden;
+            /* background-color: aqua; */
+            /* transition: all 0.4s; */
+        }
+
+        .gnb>li {
+            width: 160px;
+            text-align: center;
+            position: relative;
+        }
+
+        .gnb>li>a {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .gnb li .sub {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px;
+            height: 170px;
+            /* background-color: aliceblue; */
+            line-height: 2em;
+            padding: 20px 0;
+            box-sizing: border-box;
+        }
+
+        .subBG {
+            width: 100%;
+            height: 170px;
+            background-color: plum;
+            font-size: 0;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            z-index: 10;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="headerin">
+            <h1>logo</h1>
+            <ul class="gnb">
+                <li>
+                    <a href="#">main01</a>
+                    <ul class="sub">
+                        <li><a href="#">sub 01</a></li>
+                        <li><a href="#">sub 02</a></li>
+                        <li><a href="#">sub 03</a></li>
+                        <li><a href="#">sub 04</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">main02</a>
+                    <ul class="sub">
+                        <li><a href="#">sub 01</a></li>
+                        <li><a href="#">sub 02</a></li>
+                        <li><a href="#">sub 03</a></li>
+                        <li><a href="#">sub 04</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">main03</a>
+                    <ul class="sub">
+                        <li><a href="#">sub 01</a></li>
+                        <li><a href="#">sub 02</a></li>
+                        <li><a href="#">sub 03</a></li>
+                        <li><a href="#">sub 04</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">main04</a>
+                    <ul class="sub">
+                        <li><a href="#">sub 01</a></li>
+                        <li><a href="#">sub 02</a></li>
+                        <li><a href="#">sub 03</a></li>
+                        <li><a href="#">sub 04</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">main05</a>
+                    <ul class="sub">
+                        <li><a href="#">sub 01</a></li>
+                        <li><a href="#">sub 02</a></li>
+                        <li><a href="#">sub 03</a></li>
+                        <li><a href="#">sub 04</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="subBG">서브메뉴 배경</div>
+    </header>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+        $('.gnb').on('mouseenter', function () {
+
+            $(this).stop().animate({
+                height: '200px'
+            }, 400)
+
+            $('.subBG').stop().slideDown(400);
+
+        }).on('mouseleave', function () {
+
+            $(this).stop().animate({
+                height: '40px'
+            }, 400)
+
+            $('.subBG').stop().slideUp(400);
+
+        });
+
+        // mouseover - 대상이 되는 요소에 포인터가 올라갔을 때 실행되는 이벤트
+        // mouseenter - 대상이 포함되는 범위에 포인터가 올라갔을 때
+    </script>
+</body>
+
+</html>

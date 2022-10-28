@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼만들기</title>
+    
+    <style>
+
+        .moreBtn{
+            width: 165px;
+            height: 42px;
+            text-align: center;
+            line-height: 42px;
+            border-top: 1px solid #ec00ec;
+            border-bottom: 1px solid #ec00ec;
+            position: relative;
+        }
+
+        
+
+        .moreBtn a{
+            color: #ed008c;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .moreBtn span{
+            display: block;
+            width: 0%;
+            height: 100%;
+            background-color: #ec00ec;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all 0.6s;
+        }
+
+        .moreBtn:hover a{
+            color: #fff;
+
+        }
+
+        .moreBtn:hover span{
+            width: 100%;
+
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="moreBtn">
+    <a href="#">더보러가기</a>
+    <span class="slide"></span>
+    </div>
+</body>
+
+</html>

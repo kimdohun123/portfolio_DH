@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin/padding</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        .d1{
+            background-color: pink;
+        }
+        .d2{
+            background-color: violet;
+            
+            /*
+            margin: 속성값 한개만 입력했을땐 상하좌우 모두 여백이 생김
+
+                    속성값 두개를 입력했을땐 
+                    상하(첫번째 속성값) 좌우(두번째 속성값) 여백이 생김
+
+                    속성값 세개를 입력했을땐 
+                    상(첫번째 속성값) 좌우(두번째 속성값) 하(세번째 속성값)
+                    여백이 생김
+
+                    속성값 네개를 입력했을땐 상/우/하/좌 순으로 여백이 생김
+            */
+
+            margin: 0 auto;
+            /* 태그 중앙정렬 - 마진 0 오토를 쓸때는 태그에 정확한 width값이 있어야 함!! */
+        }
+        .d3{
+            background-color: aqua;
+            padding: 50px 30px 10px 100px;
+            /*상 우 하 좌 순서로 늘어남. 중간에 사각형이 있다고 가정하면 됨*/
+        }
+        .d4{
+            color:aliceblue;
+            background-color: black;
+            margin-left: 40px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 40px;
+            margin:100px 40px;
+        }
+        .d5{
+            width: 400px;
+            text-align: center;
+            background-color: gold;
+            /*
+            padding-top: 100px;
+            padding-bottom: 20px;
+            */
+            margin: 100px auto 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1">div 태그</div>
+    <div class="d2">margin</div>
+    <div class="d3">padding</div>
+    <div class="d4">여백주기</div>
+    <div class="d5">브라우저 중앙정렬</div>
+</body>
+
+</html>

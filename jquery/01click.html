@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+        $('.box1').on('click', function () {
+            $(this).css({
+                backgroundColor: 'orange'
+            });
+        });
+        $('.box2').on('mouseover', function () {
+            $(this).css({
+                backgroundColor: 'hotpink'
+            })
+        }).on('mouseout', function () {
+            $(this).css({
+                backgroundColor: '#ccc'
+            })
+        })
+
+        let onOff = true;
+
+        $('.box3').on('click', function () {
+            onOff = !onOff
+            console.log(onOff)
+            if (onOff == false) {
+                //조건식이 참일때 실행될 코드
+                $(this).css({
+                    backgroundColor: 'gold'
+                })
+            } else {
+                //조건식이 거짓일때 실행될 코드
+                $(this).css({
+                    backgroundColor: '#ccc'
+                })
+            }
+        })//함수스코프
+    </script>
+</body>
+
+</html>

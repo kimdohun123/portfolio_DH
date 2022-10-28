@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        /* 브레이크 포인트 : 768, 1024
+        모바일 - 배경색 노랑, 컬러 빨강, 텍스트 중앙정렬
+        768 - 모바일 버전에서는 배경색, 컬러 변경
+        1024 - pc버전에서는 텍스트 왼쪽 정렬, 배경색 변경, p태그 여백값 조절 */
+        
+        /* 320~767 */
+        
+        body{
+            background-color: yellow;
+        }
+
+        /* 767~1023 */
+
+        @media all and (min-width:768px) {
+            body{
+                background-color: blue;
+                color: red;
+                text-align: center;
+            }
+        }
+
+        /* 1024~ */
+
+        @media all and (min-width:1024px) {
+            body{
+                background-color: blueviolet;
+                color: red;
+                text-align: left;
+            }
+            p{
+                letter-spacing: 5px;
+            }
+        } 
+    </style>
+
+</head>
+<body>
+    <h1>반응형 웹사이트</h1>
+    <p>하나의 html 문서와 css 문서를 사용하여 모바일, 태블릿, pc화면에 최적화된 화면을 구성하는 방식</p>
+    <p>css문서를 작성할 때 미디어 쿼리의 조건을 사용하여 현재 문서가 출력될 환경을 지정한다.
+        (all,screen,print...)
+    </p>
+    <p>화면 사이즈 전환이 이루어지는 시점을 브레이크 포인트라고 부르며 브레이크 포인트의 개수는 사이트별로 달라질 수 있다.</p>
+    <p>아이패드 사이즈 768px을 기준으로 태블릿 사이즈를 맞추고 콘텐츠를 담고있는 안전사이즈를 기준으로 브레이크 포인트를 지정할 수 있다.</p>
+
+
+
+</body>
+</html>

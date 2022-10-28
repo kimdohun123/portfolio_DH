@@ -1,0 +1,122 @@
+04rs.html
+액세스 권한이 있는 사용자
+조
+시스템 속성
+유형
+HTML
+크기
+2KB
+사용한 용량
+2KB
+위치
+반응형웹기초
+소유자
+조은별
+수정 날짜
+오전 10:30에 조은별님이 수정
+열어 본 날짜
+오전 10:35에 내가 열어 봄
+생성 날짜
+오전 10:34
+설명 추가
+뷰어가 다운로드할 수 있음
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 
+        모바일 - height:300px
+        768px - 높이값/너비값/배치 변경
+        1024px - 높이값/너비값 변경 
+        */
+        #wrap {
+            min-width: 480px;
+        }
+
+        .box1 {
+            width: 100%;
+            height: 300px;
+            background-color: lavender;
+        }
+
+        .box2 {
+            width: 100%;
+            height: 300px;
+            background-color: lemonchiffon;
+        }
+
+        .box3 {
+            width: 100%;
+            height: 300px;
+            background-color: lightpink;
+        }
+
+        @media all and (min-width:768px) {
+            .box1 {
+                height: 100px;
+                float: left;
+            }
+
+            .box2 {
+                height: 600px;
+                float: left;
+                width: 25%;
+            }
+
+            .box3 {
+                height: 600px;
+                float: left;
+                width: 75%;
+            }
+        }
+
+        @media all and (min-width:1024px) {
+            #wrap {
+                max-width: 1024px;
+                margin: 0 auto;
+            }
+
+            .box1 {
+                height: 600px;
+                width: 33.33%;
+            }
+
+            .box2 {
+                width: 33.33%;
+            }
+
+            .box3 {
+                width: 33.33%;
+            }
+        }
+
+        /* 
+        목록 개수가 많을 때 가로너비
+        2개 : 50%
+        3개 : 33.33%
+        4개 : 25%
+        5개 : 20%
+        6개 : 16.66%
+        */
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+
+</html>

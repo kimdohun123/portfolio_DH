@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 8970px;
+            background: linear-gradient(to bottom, #fff 0%, #000 100%);
+        }
+
+        div {
+            width: 50px;
+            height: 50px;
+            background-color: plum;
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        p {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            box-shadow: 0 0 5px #000;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <p>TOP</p>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(window).on('scroll', function () {
+            let scr = $(this).scrollTop();
+            //선택자의 수직스크롤 위치를 구하는 함수(메서드)
+            //console.log(scr);
+            $('div').text(scr + 'px');
+            //선택자의 문자열을 가져오는 함수
+        })
+        $('p').on('click', function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000) //1초 1000ms 
+        })
+    </script>
+</body>
+
+</html>

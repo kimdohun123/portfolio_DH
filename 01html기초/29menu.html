@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .clear::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        /*초기화*/
+        header{
+            width: 100%;
+            background-color: bisque;
+            height: 100px;
+            position: relative;
+        }
+        .gnb{
+            background-color: aqua;
+            position: absolute  ;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* margin-left: 600px;
+            padding-top: 40px; */
+            /* header의 첫번째 자식태그에 margin-top을 쓰면 header를 움직임 */
+        }
+        .gnb li{
+            float: left;
+            margin-right: 30px;
+            font-size: 25px;
+        }
+        .gnb li::after{
+            content: '|';
+            margin-left: 30px;
+
+        }
+
+        .gnb li:last-child{
+            margin-right: 0;
+            content: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="gnb clear">
+            <li><a href="#">menu01</a></li>
+            <li><a href="#">menu02</a></li>
+            <li><a href="#">menu03</a></li>
+            <li><a href="#">menu04</a></li>
+            <li><a href="#">menu05</a></li>
+        </ul>
+    </header>
+</body>
+
+</html>

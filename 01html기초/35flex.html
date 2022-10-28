@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible</title>
+    <style>
+        .content{
+            width: 90%;
+            margin: 0 auto;
+            height: 500px;
+            border: 2px solid #000;
+            text-align:  center;
+            display: flex;
+            /* 교차축 방향으로 플렉스 아이템을 배치 */
+            align-items: baseline;
+            /* 
+            교차축 방향으로 플렉스 아이템을 개별적으로 배치
+            부모태그의 align-items 속성값을 상속받고 
+            부모태그에 적용된 속성값이 없는 경우에는 stretch를 적용한다
+            */
+
+
+
+            /* 
+            flex-start 기본값/ 주축의 시작점에서부터 배치
+            flex-end 주축 끝점으로 배치
+            center 중앙 배치
+            space-around (빈공간이 있을때/100%못채울때)여백을 아이템에 둘러서 배치
+            space-between (빈공간이 있을때/100%못채울때) 첫번째와 마지막은 양 끝으로 붙고 나머지는 동일한 간격으로 배치
+            space-evenly (빈공간이 있을때/100%못채울때) 동일한 여백 간격으로 배치 
+
+            align-items: stretch; (기본값) - 높이값이 없어도 박스를 부모태그의 높이값 만큼 확장해서 배치.
+            align-items: flex-start; - 교차점의상단부터 배치
+            align-items: flex-end; - 교차점의 하단부터 배치
+            align-items: center; - 중앙 배치
+            align-items: baseline; - 아이템의 텍스트 라인에 맞춰서 배치한다.
+            */
+        }
+        .content>div{
+            width: 33.33%;
+        }
+        .content .item1{
+            background-color: beige;
+            height: 400px;
+            order: 1;
+            
+            /* flex 아이템의 배치 순서를 바꿈 */
+        }
+        .content .item2{
+            background-color: black;
+            height: 100px;
+            padding-top: 20px;
+            order: 3;
+
+        }
+        .content .item3{
+            background-color: blueviolet;
+            padding-top: 20px;
+            height: 250px;
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="item1">플렉스아이템1</div>
+        <div class="item2">플렉스아이템2</div>
+        <div class="item3">플렉스아이템3</div>
+        
+    </div>
+</body>
+
+</html>
